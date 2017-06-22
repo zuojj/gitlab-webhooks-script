@@ -1,0 +1,17 @@
+{
+  "name": "gitlab-webhooks",
+  "version": "1.0.0",
+  "description": "gitlab webhooks",
+  "main": "deploy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node deploy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "bl": "^1.2.1",
+    "express": "^4.15.3"
+  }
+}
