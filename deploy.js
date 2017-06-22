@@ -87,3 +87,12 @@ emitter.on('push', function (event) {
         console.log(text);
     });
 });
+
+emitter.on('issues', function (event) {
+  console.log('Received an issue event for % action=%s: #%d %s',
+    event.payload.repository.name,
+    event.payload.action,
+    event.payload.issue.number,
+    event.payload.issue.title)
+})
+
