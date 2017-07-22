@@ -102,9 +102,6 @@ emitter.on('push', function (event) {
     execute();
 });
 
-// 初始化, 注意，本地直接执行，可能会 remove 掉当前项目的代码
-execute();
-
 /* 获取服务器相关信息 */
 let hostname = OS.hostname() || '',
     networks = OS.networkInterfaces(),
